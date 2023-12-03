@@ -15,8 +15,8 @@ public class Main {
 
         while (true) {
             System.out.println("\nSelect an action:");
-            System.out.println("1. Add product to cart");
-            System.out.println("2. Display product list");
+            System.out.println("1. Add dto to cart");
+            System.out.println("2. Display dto list");
             System.out.println("3. Product removal");
             System.out.println("4. Exit");
 
@@ -24,7 +24,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Enter the ID of the product you want to add: \n");
+                    System.out.print("Enter the ID of the dto you want to add: \n");
                     pr.displayProductInfo();
                     int idAdd = scanner.nextInt();
                     if(idAdd > 4){
@@ -41,7 +41,7 @@ public class Main {
                     cart.displayProductInfo();
                     break;
                 case 3:
-                    System.out.print("Enter the ID of the product you want to remove: \n");
+                    System.out.print("Enter the ID of the dto you want to remove: \n");
                     cart.displayProductInfo();
                     int idRemove = scanner.nextInt();
                     boolean flag = true;
